@@ -5,260 +5,386 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="陳怡蓁 Jane 的個人網站，專注於生物醫學資訊、資料科學、RNA-seq 分析與機器學習應用。"
+      content="YI-JEN CHEN 的生物醫學資訊與資料科學作品集，聚焦 Data Science、Data Analysis、機器學習與資料視覺化。"
     >
-    <title>陳怡蓁 Jane | Biomedical Informatics Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>YI-JEN CHEN | Biomedical Informatics Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=20260605b">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="回到首頁">
-        <span class="brand-mark">J</span>
-        <span>
-          <strong>Jane Chen</strong>
-          <small>Biomedical Informatics</small>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="主要導覽">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
+    <aside class="control-rail" aria-label="Page navigation and language switcher">
+      <div class="rail-identity">
+        <a class="rail-brand" href="#about" aria-label="Back to top">YC</a>
+        <strong data-i18n="railName">陳怡蓁</strong>
+        <small data-i18n="railSubtitle">Portfolio</small>
+      </div>
+      <nav class="site-nav rail-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#resume" data-i18n="navResume">Resume</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#projects" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#achievements" data-i18n="navAwards">Awards</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-    </header>
+      <button class="language-toggle" type="button" aria-label="Switch language" data-lang-toggle>EN</button>
+    </aside>
 
-    <main id="top">
-      <section class="hero section-band">
-        <div class="hero-content">
-          <p class="eyebrow">Biomedical Informatics · Data Science · Machine Learning</p>
-          <h1>陳怡蓁 Jane</h1>
-          <p class="hero-lede">
-            以生物醫學資訊為核心，結合統計分析、程式設計與機器學習，將高維度生醫資料轉化為可解釋、可溝通的研究洞察。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">查看專案</a>
-            <a class="button secondary" href="mailto:jane515257@gmail.com">聯絡我</a>
+    <div class="site-shell">
+      <aside class="profile-sidebar" aria-label="Profile information">
+        <div class="sidebar-card">
+          <div class="avatar-frame">
+            <img src="assets/profile.png" alt="YI-JEN CHEN profile photo">
+          </div>
+
+          <div class="identity">
+            <h1 data-i18n="profileName">陳怡蓁</h1>
+            <p data-i18n="profileRole">Data Scientist</p>
+          </div>
+
+          <div class="contact-list">
+            <a href="mailto:jane515257@gmail.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+              </span>
+              <span>Email</span>
+              <strong>jane515257@gmail.com</strong>
+            </a>
+            <a href="https://github.com/dock0528" target="_blank" rel="noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-3 18c.5.1.7-.2.7-.5v-1.9c-2.9.6-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1.1-2.8-.1-.3-.5-1.3.1-2.8 0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.2 0C17.1 4.4 18 4.7 18 4.7c.6 1.5.2 2.5.1 2.8.7.8 1.1 1.7 1.1 2.8 0 4-2.4 4.8-4.7 5.1.4.3.8 1 .8 2v2.6c0 .3.2.6.8.5a9.5 9.5 0 0 0-3-18Z"></path></svg>
+              </span>
+              <span>GitHub</span>
+              <strong>github.com/dock0528</strong>
+            </a>
+            <div>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19V7l8-4 8 4v12"></path><path d="M8 19v-7h8v7"></path></svg>
+              </span>
+              <span>Degree</span>
+              <strong data-i18n="degreeValue">NYCU 生物醫學資訊所 碩士</strong>
+            </div>
+            <div>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg>
+              </span>
+              <span>Language</span>
+              <strong data-i18n="languageValue">中文精通 · TOEIC 785</strong>
+            </div>
+          </div>
+
+          <div class="sidebar-actions">
+            <a class="button primary" href="#contact" data-i18n="contactButton">Contact</a>
+            <a class="button ghost" href="./履歷表NEW_V4.pptx" data-i18n="cvButton">Download CV</a>
           </div>
         </div>
+      </aside>
 
-        <aside class="profile-panel" aria-label="個人摘要">
-          <img src="assets/profile.png" alt="陳怡蓁 Jane 個人照片" class="profile-photo">
-          <div class="profile-copy">
-            <p class="profile-name">Jane Chen</p>
-            <p>NYCU 生物醫學資訊所碩士，具備 RNA-seq、單細胞資料、機器學習分類與資料視覺化實作經驗。</p>
-          </div>
-        </aside>
-      </section>
-
-      <section class="metrics" aria-label="重點摘要">
-        <div>
-          <strong>NYCU</strong>
-          <span>生物醫學資訊所 碩士</span>
-        </div>
-        <div>
-          <strong>ISMB</strong>
-          <span>國際生物資訊研討會 Poster 發表</span>
-        </div>
-        <div>
-          <strong>1st</strong>
-          <span>生醫資訊所專題論文比賽第一名</span>
-        </div>
-        <div>
-          <strong>TOEIC 785</strong>
-          <span>英文進階溝通能力</span>
-        </div>
-      </section>
-
-      <section id="about" class="content-section">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>關於我</h2>
-        </div>
-        <div class="about-layout">
-          <div class="narrative">
-            <p>
-              畢業於國立陽明交通大學生物醫學資訊研究所。求學期間因對數字、邏輯推理與圖表分析感興趣，持續修習統計、程式設計、人工智慧、機器學習與圖像辨識等課程，並主動精進 Python、R 與 Linux。
-            </p>
-            <p>
-              大學專題以乳癌資料庫分析獲得 TSBME 研討會生醫資訊組口頭論文比賽特優；碩士期間投入多體學罕見疾病分析研究，累積 bulk RNA-seq、single-cell RNA-seq、特徵篩選、統計分析與資料視覺化經驗。
-            </p>
-          </div>
-          <div class="skill-cloud" aria-label="專業技能">
-            <span>Python</span>
-            <span>R</span>
-            <span>Linux</span>
-            <span>Machine Learning</span>
-            <span>RNA-seq</span>
-            <span>Single-cell Analysis</span>
-            <span>Statistical Analysis</span>
-            <span>Tableau</span>
-            <span>Streamlit</span>
-            <span>Matplotlib</span>
-            <span>Database</span>
-            <span>Arduino</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="content-section tinted">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>專案與研究</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="card-kicker">Multi-omics · RNA-seq</p>
-            <h3>多維度生醫資料整合與分析</h3>
-            <p>
-              整合群體轉錄體與單細胞轉錄體資料，建立分析流程並進行資料前處理、統計分析、特徵篩選與視覺化，聚焦干擾素相關基因表現與免疫失調特徵。
-            </p>
-            <ul class="inline-list">
-              <li>Linux</li>
-              <li>Python</li>
-              <li>R</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <p class="card-kicker">Machine Learning · Cancer Data</p>
-            <h3>乳癌高維度資料分類專案</h3>
-            <p>
-              以微小核糖核酸與核糖核酸資料進行特徵篩選、機器學習分類與模型評估，探索潛在 microRNA 診斷組合並分析致癌角色。
-            </p>
-            <ul class="inline-list">
-              <li>Feature Selection</li>
-              <li>Classification</li>
-              <li>Model Evaluation</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <p class="card-kicker">Applied Analytics</p>
-            <h3>商業資料與預測模型</h3>
-            <p>
-              實作乳癌良惡性預測、肺癌發病因子預測、產品銷售量預測與房價預測，熟悉從資料清理、特徵工程、模型建立到結果解讀的完整流程。
-            </p>
-            <ul class="inline-list">
-              <li>Python</li>
-              <li>Matplotlib</li>
-              <li>Streamlit</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="content-section">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>學經歷</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-date">2024</span>
-            <div>
-              <h3>台灣行銷研究有限公司 TMR · 行銷資料科學分析實習生</h3>
-              <p>
-                參與行銷資料前處理、特徵工程、模型建立、視覺化分析與結果解讀。透過 Python、R、Matplotlib、Streamlit 與機器學習方法，支援商業決策分析。
+      <div class="content-board">
+        <main>
+          <section id="about" class="panel-section hero-panel">
+            <div class="hero-copy">
+              <p class="eyebrow">Biomedical Informatics · Data Science · Data Analysis · Machine Learning</p>
+              <h2 data-i18n="heroTitle">About me</h2>
+              <p class="lead">
+                <span data-i18n="heroLead">我是生物醫學資訊背景的資料分析者，擅長 Data Science、Data Analysis、統計分析與機器學習建模，致力於把複雜資料整理成清楚、可解釋的研究洞察。</span>
               </p>
             </div>
-          </article>
 
-          <article class="timeline-item">
-            <span class="timeline-date">2024-2026</span>
-            <div>
-              <h3>國立陽明交通大學 · 生物醫學資訊所 碩士</h3>
-              <p>
-                研究方向涵蓋多體學罕見疾病分析、bulk RNA-seq、single-cell RNA-seq 與干擾素相關基因表現分析。
-              </p>
+            <div class="hero-stats" aria-label="Highlights">
+              <article>
+                <span data-i18n="statEducationLabel">Education</span>
+                <strong data-i18n="statEducationTitle">NYCU 碩士</strong>
+                <p data-i18n="statEducationBody">生物醫學資訊所</p>
+              </article>
+              <article>
+                <span data-i18n="statPresentationLabel">Presentation</span>
+                <strong>ISMB Poster</strong>
+                <p data-i18n="statPresentationBody">國際生物資訊研討會</p>
+              </article>
+              <article>
+                <span data-i18n="statAwardLabel">Award</span>
+                <strong>1st Place</strong>
+                <p data-i18n="statAwardBody">生醫資訊所專題論文比賽</p>
+              </article>
             </div>
-          </article>
 
-          <article class="timeline-item">
-            <span class="timeline-date">2020-2024</span>
-            <div>
-              <h3>國立中央大學 · 生醫科學與工程學系 學士</h3>
-              <p>
-                以生醫資料分析與機器學習為專題方向，培養跨領域研究、程式實作與資料分析能力。
-              </p>
+            <div class="first-page-grid">
+              <article class="focus-card">
+                <span>01</span>
+                <h3 data-i18n="focusBioTitle">生醫資料分析</h3>
+                <p data-i18n="focusBioBody">處理 Data Science、Data Analysis 與多體學資料，從資料前處理到統計分析與視覺化。</p>
+              </article>
+              <article class="focus-card">
+                <span>02</span>
+                <h3 data-i18n="focusMlTitle">機器學習建模</h3>
+                <p data-i18n="focusMlBody">建立分類與預測模型，涵蓋資料清理、特徵工程、模型訓練、評估與結果解讀。</p>
+              </article>
+              <article class="focus-card">
+                <span>03</span>
+                <h3 data-i18n="focusWorkflowTitle">研究流程建置</h3>
+                <p data-i18n="focusWorkflowBody">具備 Python、R 與 Linux 實作能力，可支援分析流程、資料處理與研究成果整理。</p>
+              </article>
             </div>
-          </article>
+          </section>
 
-          <article class="timeline-item">
-            <span class="timeline-date">2020-至今</span>
-            <div>
-              <h3>國高中家教老師</h3>
-              <p>
-                教授數學、物理、化學與生物，累積長期教學、問題拆解與溝通表達經驗。
-              </p>
+          <section id="resume" class="panel-section resume-section">
+            <div class="section-heading resume-title">
+              <h2>Resume</h2>
             </div>
-          </article>
-        </div>
-      </section>
 
-      <section id="awards" class="content-section tinted">
-        <div class="section-heading">
-          <p class="eyebrow">Awards</p>
-          <h2>競賽、獎項與證書</h2>
-        </div>
+            <div class="resume-block">
+              <div class="resume-block-heading">
+                <span class="resume-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20v17H7.5A3.5 3.5 0 0 0 4 22V5.5Z"></path><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20"></path></svg>
+                </span>
+                <h3 data-i18n="educationHeading">Education</h3>
+              </div>
 
-        <div class="award-grid">
-          <article>
-            <h3>生物醫學資訊所專題論文比賽</h3>
-            <p>第一名</p>
-          </article>
-          <article>
-            <h3>TSBME 研討會生醫資訊組口頭論文比賽</h3>
-            <p>特優</p>
-          </article>
-          <article>
-            <h3>臺灣神經免疫醫學會研討會口頭論文比賽</h3>
-            <p>第二名</p>
-          </article>
-          <article>
-            <h3>第 27 屆罕見疾病博碩士論文獎助學金</h3>
-            <p>獲獎</p>
-          </article>
-          <article>
-            <h3>ISMB 國際生物資訊研討會</h3>
-            <p>Poster 發表</p>
-          </article>
-          <article>
-            <h3>Ewant 課程證書</h3>
-            <p>R 語言新手村、資料科學</p>
-          </article>
-        </div>
-      </section>
+              <div class="resume-list">
+                <article class="resume-entry">
+                  <h4 data-i18n="timelineNycuTitle">國立陽明交通大學</h4>
+                  <span>2024 - 2026</span>
+                  <p data-i18n="timelineNycuBody">生物醫學資訊所碩士，研究方向涵蓋多體學資料、Data Science 與 Data Analysis。</p>
+                </article>
+                <article class="resume-entry">
+                  <h4 data-i18n="timelineNcuTitle">國立中央大學</h4>
+                  <span>2020 - 2024</span>
+                  <p data-i18n="timelineNcuBody">生醫科學與工程學系學士，培養生醫資料分析、程式設計與跨領域研究能力。</p>
+                </article>
+              </div>
+            </div>
 
-      <section id="contact" class="contact-section">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>期待將資料分析能力帶入真實研究與產品場景</h2>
-          <p>
-            歡迎針對生醫資料分析、機器學習、研究助理、資料科學實習或跨領域專案與我聯繫。
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:jane515257@gmail.com">jane515257@gmail.com</a>
-          <a class="button secondary" href="https://github.com/dock0528" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="./履歷表NEW_V4.pptx">下載完整 CV</a>
-        </div>
-      </section>
-    </main>
+            <div class="resume-block">
+              <div class="resume-block-heading">
+                <span class="resume-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M4 7h16v12H4z"></path><path d="M4 12h16"></path></svg>
+                </span>
+                <h3 data-i18n="experienceHeading">Experience</h3>
+              </div>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Jane Chen. Built for GitHub Pages.</p>
-    </footer>
+              <div class="resume-list">
+                <article class="resume-entry">
+                  <h4 data-i18n="timelineTmrTitle">台灣行銷研究有限公司 TMR</h4>
+                  <span>2024</span>
+                  <p data-i18n="timelineTmrBody">行銷資料科學分析實習生，參與資料前處理、特徵工程、模型建立、視覺化分析與商業結果解讀。</p>
+                </article>
+                <article class="resume-entry">
+                  <h4 data-i18n="timelineTutorTitle">國高中家教老師</h4>
+                  <span data-i18n="timelineTutorDate">2020 - 至今</span>
+                  <p data-i18n="timelineTutorBody">教授數學、物理、化學與生物，累積長期教學、問題拆解與溝通表達經驗。</p>
+                </article>
+              </div>
+            </div>
+          </section>
 
-    <script src="script.js"></script>
+          <section id="skills" class="panel-section compact-section">
+            <p class="eyebrow">Skills</p>
+
+            <div class="skills-layout">
+              <div class="skill-bars">
+                <article class="skill-row">
+                  <div><span>Python</span><strong>Advanced</strong></div>
+                  <progress value="90" max="100">90%</progress>
+                </article>
+                <article class="skill-row">
+                  <div><span>R / Statistical Analysis</span><strong>Advanced</strong></div>
+                  <progress value="90" max="100">90%</progress>
+                </article>
+                <article class="skill-row">
+                  <div><span>Data Analysis Workflow</span><strong>Strong</strong></div>
+                  <progress value="85" max="100">85%</progress>
+                </article>
+                <article class="skill-row">
+                  <div><span>Machine Learning</span><strong>Strong</strong></div>
+                  <progress value="85" max="100">85%</progress>
+                </article>
+                <article class="skill-row">
+                  <div><span>Linux / Pipeline Setup</span><strong>Practical</strong></div>
+                  <progress value="80" max="100">80%</progress>
+                </article>
+                <article class="skill-row">
+                  <div><span>Visualization</span><strong>Strong</strong></div>
+                  <progress value="85" max="100">85%</progress>
+                </article>
+              </div>
+
+              <div class="tool-card">
+                <h3 data-i18n="toolHeading">常用工具</h3>
+                <div class="icon-skill-grid" aria-label="Skill tool icons">
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/python/3776AB" alt=""><b>Py</b></span>
+                    <strong>Python</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/r/276DC3" alt=""><b>R</b></span>
+                    <strong>R</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/linux/FCC624" alt=""><b>$_</b></span>
+                    <strong>Linux</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt=""><b>C</b></span>
+                    <strong>C</strong>
+                  </div>
+                  <div class="icon-skill database-card">
+                    <span class="tool-icon database-icon" aria-hidden="true">
+                      <svg viewBox="0 0 128 128" focusable="false">
+                        <ellipse cx="64" cy="26" rx="43" ry="18"></ellipse>
+                        <path d="M21 26v27c0 10 19 18 43 18s43-8 43-18V26"></path>
+                        <path d="M21 53v27c0 10 19 18 43 18s43-8 43-18V53"></path>
+                        <path d="M21 80v22c0 10 19 18 43 18s43-8 43-18V80"></path>
+                        <path d="M31 47c7 5 18 8 33 8s26-3 33-8"></path>
+                        <path d="M31 74c7 5 18 8 33 8s26-3 33-8"></path>
+                        <circle cx="91" cy="48" r="3"></circle>
+                        <circle cx="91" cy="75" r="3"></circle>
+                        <circle cx="91" cy="102" r="3"></circle>
+                      </svg>
+                    </span>
+                    <strong>Database</strong>
+                  </div>
+                  <div class="icon-skill tableau-card">
+                    <span class="tool-icon wide-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Tableau_Software_Logo_Small.png" alt=""><b>T</b></span>
+                    <strong>Tableau</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt=""><b>S</b></span>
+                    <strong>Streamlit</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt=""><b>M</b></span>
+                    <strong>Matplotlib</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/arduino/00878F" alt=""><b>A</b></span>
+                    <strong>Arduino</strong>
+                  </div>
+                  <div class="icon-skill">
+                    <span class="tool-icon"><img src="https://cdn.simpleicons.org/espressif/E7352C" alt=""><b>32</b></span>
+                    <strong>ESP32</strong>
+                  </div>
+                  <div class="icon-skill ml-card">
+                    <span class="tool-icon ml-icon" aria-hidden="true">
+                      <svg viewBox="0 0 128 128" focusable="false">
+                        <circle cx="30" cy="34" r="12"></circle>
+                        <circle cx="88" cy="28" r="12"></circle>
+                        <circle cx="64" cy="70" r="13"></circle>
+                        <circle cx="34" cy="100" r="11"></circle>
+                        <circle cx="98" cy="96" r="11"></circle>
+                        <path d="M41 39l13 20M77 38L69 58M55 80l-13 12M76 80l14 10M45 96h41"></path>
+                      </svg>
+                    </span>
+                    <strong>Machine Learning</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="panel-section compact-section">
+            <p class="eyebrow">Portfolio</p>
+
+            <div class="project-grid">
+              <article class="project-card featured">
+                <span class="project-type" data-i18n="projectOneType">專題計畫（一）</span>
+                <h3 data-i18n="projectOneTitle">乳癌 TCGA 整合分析</h3>
+                <p data-i18n="projectOneBody">整合 TCGA 乳癌資料，辨識潛在 microRNA 診斷組合，並探索其在致癌機制中的角色。</p>
+                <ul>
+                  <li>Data Science</li>
+                  <li>Data Analysis</li>
+                  <li>TCGA</li>
+                </ul>
+              </article>
+
+              <article class="project-card">
+                <span class="project-type" data-i18n="projectTwoType">專題計畫（二）</span>
+                <h3 data-i18n="projectTwoTitle">視神經脊髓炎免疫失調分析</h3>
+                <p data-i18n="projectTwoBody">以 Bulk and Single-Cell Data Characterization 探討 interferon-related gene expression 與免疫失調訊號。</p>
+                <ul>
+                  <li>Data Science</li>
+                  <li>Data Analysis</li>
+                  <li>Visualization</li>
+                </ul>
+              </article>
+
+              <article class="project-card">
+                <span class="project-type" data-i18n="projectThreeType">其他作品集</span>
+                <h3 data-i18n="projectThreeTitle">乳癌良惡性與肺癌發病因子預測</h3>
+                <p data-i18n="projectThreeBody">運用資料前處理、特徵工程與機器學習模型，建立分類與預測流程，支援模型評估與結果解讀。</p>
+                <ul>
+                  <li>Python</li>
+                  <li>Machine Learning</li>
+                  <li>Classification</li>
+                </ul>
+              </article>
+
+              <article class="project-card">
+                <span class="project-type" data-i18n="projectFourType">其他作品集</span>
+                <h3 data-i18n="projectFourTitle">產品銷售量與房價預測</h3>
+                <p data-i18n="projectFourBody">透過資料清理、特徵工程、視覺化與預測模型，將資料轉化為可解釋的商業與市場觀察。</p>
+                <ul>
+                  <li>Streamlit</li>
+                  <li>Matplotlib</li>
+                  <li>Business Insight</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="achievements" class="panel-section compact-section">
+            <p class="eyebrow">Awards & Highlights</p>
+
+            <div class="achievement-grid">
+              <article>
+                <span>01</span>
+                <h3 data-i18n="awardOneTitle">生物醫學資訊所專題論文比賽</h3>
+                <p data-i18n="awardOneBody">第一名</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3 data-i18n="awardTwoTitle">TSBME 生物醫學工程研討會論文競賽</h3>
+                <p data-i18n="awardTwoBody">特優</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3 data-i18n="awardThreeTitle">校內生醫資訊研究成果競賽</h3>
+                <p data-i18n="awardThreeBody">第一名</p>
+              </article>
+              <article>
+                <span>04</span>
+                <h3 data-i18n="awardFourTitle">第 27 屆罕見疾病博碩士論文獎助學金</h3>
+                <p data-i18n="awardFourBody">獲獎</p>
+              </article>
+              <article>
+                <span>05</span>
+                <h3 data-i18n="awardFiveTitle">ISMB 國際生物資訊研討會</h3>
+                <p data-i18n="awardFiveBody">Poster 發表</p>
+              </article>
+              <article>
+                <span>06</span>
+                <h3 data-i18n="awardSixTitle">Ewant 課程證書</h3>
+                <p data-i18n="awardSixBody">R 語言</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="contact" class="panel-section contact-panel">
+            <div>
+              <p class="eyebrow">Contact</p>
+            </div>
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:jane515257@gmail.com">Email Jane</a>
+              <a class="button ghost" href="https://github.com/dock0528" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button ghost" href="./履歷表NEW_V4.pptx" data-i18n="cvButton">Download CV</a>
+            </div>
+          </section>
+        </main>
+
+        <footer class="site-footer">
+          <p>&copy; <span id="year"></span> YI-JEN CHEN. Built for GitHub Pages.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js?v=20260605b"></script>
   </body>
 </html>
