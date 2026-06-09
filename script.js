@@ -10,7 +10,6 @@ if (yearElement) {
 const translations = {
   zh: {
     railName: "陳怡蓁",
-    railSubtitle: "Portfolio",
     navAbout: "About",
     navResume: "Resume",
     navSkills: "Skills",
@@ -18,8 +17,15 @@ const translations = {
     navAwards: "Awards",
     navContact: "Contact",
     profileName: "陳怡蓁",
+    contactEmailLabel: "電子信箱",
+    contactPhoneLabel: "電話",
+    contactLocationLabel: "所在地",
+    contactBirthLabel: "出生日期",
+    contactEducationLabel: "學歷",
+    contactLanguagesLabel: "語言",
+    locationValue: "新北市，台灣",
     degreeValue: "NYCU 生物醫學資訊所 碩士",
-    languageValue: "中文精通 · TOEIC 785",
+    languageValue: "中文 • 英文 TOEIC 785",
     contactButton: "Contact",
     cvButton: "Download CV",
     heroTitle: "About me",
@@ -84,12 +90,17 @@ const translations = {
     awardFiveBody: "Poster 發表",
     awardSixTitle: "Ewant 課程證書",
     awardSixBody: "R 語言、資料科學",
-    contactHeading: "Contact",
-    contactBody: ""
+    contactHeading: "Contact Me",
+    contactInfoLabel: "聯絡資訊",
+    contactCardTitle: "合作與職涯洽詢",
+    contactBody:
+      "歡迎正在尋找數據分析師、資料工程師或專案管理人才的人與我聯繫。我樂於討論資料分析、資料工程流程、機器學習建模、資料視覺化與跨部門專案協作機會，期待將資料轉化為清楚、可解釋且具決策價值的洞察。",
+    contactEmailTitle: "電子信箱",
+    contactPhoneTitle: "手機號碼",
+    contactEmailButton: "直接寄信"
   },
   en: {
     railName: "YI-JEN CHEN",
-    railSubtitle: "Portfolio",
     navAbout: "About",
     navResume: "Resume",
     navSkills: "Skills",
@@ -97,8 +108,15 @@ const translations = {
     navAwards: "Awards",
     navContact: "Contact",
     profileName: "YI-JEN CHEN",
+    contactEmailLabel: "Email",
+    contactPhoneLabel: "Phone",
+    contactLocationLabel: "Location",
+    contactBirthLabel: "Date of Birth",
+    contactEducationLabel: "Education",
+    contactLanguagesLabel: "Languages",
+    locationValue: "NEW TAIPEI CITY, TAIWAN",
     degreeValue: "M.S. in Biomedical Informatics, NYCU",
-    languageValue: "Mandarin · TOEIC 785",
+    languageValue: "Mandarin • English TOEIC 785",
     contactButton: "Contact",
     cvButton: "Download CV",
     heroTitle: "About me",
@@ -155,7 +173,7 @@ const translations = {
     awardOneBody: "Excellent Award",
     awardTwoTitle: "Biomedical Informatics Thesis Competition",
     awardTwoBody: "First Place",
-    awardThreeTitle: "Taiwan Neuroimmunology Society Oral Paper Competition",
+    awardThreeTitle: "Taiwan Neuroimmunology Medical Society Oral Paper Competition",
     awardThreeBody: "Second Place",
     awardFourTitle: "27th Rare Disease Graduate Thesis Scholarship",
     awardFourBody: "Awarded",
@@ -163,8 +181,14 @@ const translations = {
     awardFiveBody: "Poster presentation",
     awardSixTitle: "Ewant Course Certificate",
     awardSixBody: "R Language, Data Science",
-    contactHeading: "Contact",
-    contactBody: ""
+    contactHeading: "Contact Me",
+    contactInfoLabel: "Contact Information",
+    contactCardTitle: "Open to Opportunities & Collaboration",
+    contactBody:
+      "I am interested in opportunities in data analysis, data engineering, and project management, as well as collaborations in machine learning modeling, data visualization, and workflow optimization. Feel free to reach out through the following channels.",
+    contactEmailTitle: "Email Address",
+    contactPhoneTitle: "Mobile Phone",
+    contactEmailButton: "Send Email Directly"
   }
 };
 
