@@ -1093,7 +1093,7 @@ progress::-moz-progress-bar {
 }
 
 .achievement-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .achievement-grid article {
@@ -1118,6 +1118,10 @@ progress::-moz-progress-bar {
 
 .achievement-grid article:nth-child(6) {
   --accent: var(--gold);
+}
+
+.achievement-grid article:nth-child(7) {
+  --accent: var(--rose);
 }
 
 .achievement-grid .achievement-icon {
@@ -1373,6 +1377,16 @@ progress::-moz-progress-bar {
   }
 }
 
+@media (max-width: 1280px) {
+  .achievement-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .achievement-grid article:nth-child(7) {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 900px) {
   .control-rail {
     top: 14px;
@@ -1410,6 +1424,10 @@ progress::-moz-progress-bar {
   .achievement-grid,
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .achievement-grid article:nth-child(7) {
+    grid-column: auto;
   }
 
   .icon-skill-grid {
