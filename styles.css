@@ -1113,15 +1113,15 @@ progress::-moz-progress-bar {
 }
 
 .achievement-grid article:nth-child(5) {
-  --accent: var(--mint);
+  --accent: var(--rose);
 }
 
 .achievement-grid article:nth-child(6) {
-  --accent: var(--gold);
+  --accent: var(--mint);
 }
 
 .achievement-grid article:nth-child(7) {
-  --accent: var(--rose);
+  --accent: var(--gold);
 }
 
 .achievement-grid .achievement-icon {
